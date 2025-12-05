@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="" href="/media/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fastrack</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+  </head>
+  <body>
+
+    
+
+    <div class="page bg-[#100F0F] w-[100vw] h-screen fixed z-[100]">
+
+      <div class="loader pointer-events-none flex items-center justify-center relative">
+
+        <div class="fastrack flex items-center w-[50%] h-screen m-auto ">
+          <div class="loadText relative flex items-center w-max h-max scale-1">
+
+            <div class="baseText w-[50vw]">
+
+              <img class="opacity-[0.3]" src="media/faslogo.png" alt="">
+  
+            </div>
+            <div class="upText absolute w-[0%] overflow-hidden">
+              <div class="w-[50vw]">
+                <img src="media/faslogo.png" alt="">
+              </div>
+            </div>
+
+
+          </div>
+
+          
+
+
+        </div>
+
+        <div class="dialCircle h-[50px] w-[50px] bg-[#5a4424] rounded-full absolute top top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] border border-[#95713b] opacity-0">
+
+          <img src="/media/ezgif.com-animated-gif-maker.gif" alt="" class="scale-[1.75] absolute top-[61%] left-[46%] translate-x-[-50%] translate-y-[-50%]">
+
+<div class="circle h-[30px] w-[30px] bg-[#ff721d] blur-[40px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" ></div>
+
+
+        </div>
+
+        <div
+        class="clock absolute top-[48.5%] left-[49%] md:top-[48.6%] md:left-[49%] lg:left-[49.5%] translate-x-[-50%] translate-y-[-50%] scale-[0.5] z-[3] opacity-0"
+      >   
+
+        <lottie-player
+        class="scale-[0.1]"
+         src="https://lottie.host/bc8c2cfe-7b60-45e5-867d-aba1740977a6/QMblnrGKQ3.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+
+      </div>
+
+      <div
+      class="wristWatch absolute h-[350px] w-[350px] top-[50.5%] left-[50.5%] translate-x-[-50%] translate-y-[-50%] opacity-0"
+    >
+      <img src="belt.png" alt="" />
+    </div>
+
+      </div>
+
+    </div> 
+
+    <div class="navPage font-redhat">
+      <div class="navbar w-full h-max flex   z-[1] bg-[#f4eeee49]">
+        <div class="navContainer leading-[1.8] font-[400] max-w-[480px] w-[100%]  ">
+          <nav class="absolute flex text-[#FF721D] max-w-[480px] w-full z-[1]   py-2">
+
+            <input class="absolute translate-x-[50%] translate-y-[50%]" type="checkbox" id="link" hidden>
+
+            <label for="link" class="link w-[70px] h-[40px] text-center absolute flex justify-center items-center cursor-pointer z-[99] ">
+              <i class="open fa-solid fa-bars text-[#f7f4f2] scale-[1.5] sm:scale-[2]"></i>
+              <i class="close fa-solid fa-close text-[#f7f4f2] scale-[1.5] sm:scale-[2]"></i>
+            </label>
+
+            
+
+            <ul class="submenu list-none">
+              <li>
+                <a href="#">
+                  <i class="material-symbols-outlined flex items-center justify-center  ">watch_screentime</i>
+                  <span>Watches</span> 
+
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <i class="material-symbols-outlined flex items-center justify-center">man</i>
+                  <span>Men</span> 
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-symbols-outlined flex items-center justify-center">woman</i>
+                  <span>Women</span> 
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-gift flex items-center justify-center"></i>
+                  <span>Giftings</span> 
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping flex items-center justify-center "></i>
+                  <span>Cart</span> 
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="logoContainer absolute right-0 w-[150px] h-[40px] mt-[4px]  ">
+
+          <div class=" w-[100%] h-[100%] absolute blur bg-[#e98f7135]"></div>
+
+          <div class="logo text-white   bg-[#ffffff36] px-3 backdrop-blur-[5px] shadow-lg border border-[#ffffff3a] h-[100%] flex justify-center items-center rounded-l-lg ">
+            <img src="media/faslogo.png" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#ec4726] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#ec5726]  fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.9]"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#ea5c2d] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.8]"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#ec6437] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.7]"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#ea792d] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.6]"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#eb7c38] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.5]"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#ed8544] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.4]"></div>
+   
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#eb9838] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.3]"></div>
+    
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#efa03f] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.2]"></div>
+    <div class="cursor h-[20px] w-[20px] rounded-full bg-[#e99b42] fixed top-[-20px] left-[-20px] z-[99] hidden lg:block scale-[0.1]"></div>
+
+    <div id="main" class="lg:cursor-none">
+      
+
+
+      <div class="page1 bg-[#100F0F]  w-full ">
+        <div class="video  absolute bg-[#00000085] w-full">
+
+          <video autoplay loop muted preload='auto'>
+            <source src="">
+          </video>
+
+          <div class="overCast w-full absolute bg-[#3a3737c4] top-[0] flex justify-center items-center flex-col text-[white] gap-2 md:gap-8">
+  
+            <h1 class="scale-[2] md:scale-[5] textShadow font-bold font-raleway">WEAR THE <span class="italic">CLASS</span></h1>
+            <p class="text-[10px] sm:text-sm md:text-2xl font-bold max-w-[90%] text-center flex items-center gap-2 text-orange-500 font-raleway">
+              YOUR <span class="inline"><img class="h-[14px] sm:h-[20px] md:h-[32px]" src="media/faslogo.png" alt=""></span> WATCH TELLS MORE THAN JUST TIME
+            </p>
+  
+          </div>
+
+
+
+        </div>
+
+        
+      </div>
+
+      <div class="page2 bg-[#100F0F] h-screen ">
+
+        <div class="category absolute w-[100vw] h-[100vh] bg-[#100F0F] font-redhat">
+
+          <div
+          class="main-category bg-[#100F0F] w-[100vw] h-[100vh] font-redhat flex items-center overflow-hidden absolute"
+          >
+          <div class="left w-[20%] h-[100%] font-[500] text-[#dadada]">
+              <div class="left-top h-[50%] relative">
+              <div
+                  class="l-btn1 hover-effect py-2 px-5 border transition duration-500 border-[#b6b5b5] rounded-full left-[20%] sm:left-1/2 sm:-translate-x-1/2 top-[20%] sm:top-1/2 sm:-translate-y-1/2 absolute cursor-pointer"
+              >
+                  <h3 class="text-[15px] relative z-10">Watches</h3>
+              </div>
+              </div>
+              <div class="left-bottom h-[50%] relative">
+              <div
+                  class="l-btn2 hover-effect py-2 px-5 border transition duration-500 border-[#b6b5b5] rounded-full left-[20%] sm:left-1/2 sm:-translate-x-1/2 bottom-[20%] sm:bottom-1/2 sm:translate-y-1/2 absolute cursor-pointer"
+              >
+                  <h3 class="text-[15px] relative z-10">Glasses</h3>
+              </div>
+              </div>
+          </div>
+      
+          <div
+              class="center w-[60%] h-[130vh] text-[4.5rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7.5rem] font-semibold text-[#b6b5b5] flex flex-col justify-center"
+          >
+              <div
+              class="center-top w-full h-[50%] flex items-end justify-center"
+              >
+              <h1
+                  class="leading-[3.3rem] sm:leading-[4rem] md:leading-[4.8rem] lg:leading-[5.4rem] tracking-tighter text-center"
+              >
+                  EXPLORE <br />
+                  OUR
+              </h1>
+              </div>
+      
+              <div
+              class="center-center1 h-0 w-full"
+              style="transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.3s"
+              ></div>
+              <div
+              class="center-center2 h-0 w-full"
+              style="transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.3s"
+              ></div>
+              <div
+              class="center-center3 h-0 w-full"
+              style="transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.3s"
+              ></div>
+              <div
+              class="center-center4 h-0 w-full"
+              style="transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.3s"
+              ></div>
+      
+              <div
+              class="center-bottom w-full h-[50%] flex items-start justify-center"
+              >
+              <h1
+                  class="leading-[3.3rem] sm:leading-[4rem] md:leading-[4.8rem] lg:leading-[5.4rem] tracking-tighter text-center"
+              >
+                  CURATED <br />
+                  ITEMS
+              </h1>
+              </div>
+          </div>
+      
+          <div
+              class="right w-[20%] h-[100%] font-[500] text-[#dadada]"
+          >
+              <div class="right-top items-center h-[50%] relative">
+              <div
+                  class="r-btn1 py-2 px-5 border  rounded-full hover-effect transition duration-500 border-[#b6b5b5] right-[20%] sm:right-1/2 sm:translate-x-1/2 top-[20%] sm:top-1/2 sm:-translate-y-1/2 absolute cursor-pointer"
+              >
+                  <h3 class="text-[15px] relative z-10">Hearables</h3>
+              </div>
+              </div>
+              <div class="right-bottom h-[50%] relative">
+              <div
+                  class="r-btn2 py-2 px-5 border rounded-full hover-effect transition duration-500 border-[#b6b5b5]  right-[20%] sm:right-1/2 sm:translate-x-1/2 bottom-[20%] sm:bottom-1/2 sm:translate-y-1/2 absolute cursor-pointer"
+              >
+                  <h3 class="text-[15px] relative z-10">Perfumes</h3>
+              </div>
+              </div>
+          </div>
+      
+          <div
+              id="one"
+              class="all-content content-1 left-1/2 sm:translate-y-0 translate-y-1/2 sm:translate-x-0 -translate-x-1/2 bottom-[50%] sm:left-[20%]"
+          >
+              <video class="w-full" autoplay loop muted>
+              <source
+                  src="media/cat1.mp4"
+              />
+              </video>
+          </div>
+          <div
+              id="two"
+              class="all-content content-2 left-1/2 sm:translate-y-0 -translate-y-1/2 sm:translate-x-0 -translate-x-1/2 top-[50%] sm:left-[20%]"
+          >
+              <video class="w-full" autoplay loop muted>
+              <source
+                  src="media/cat2.mp4"
+              />
+              </video>
+          </div>
+          <div
+              id="three"
+              class="all-content content-3 right-1/2 sm:translate-y-0 translate-y-1/2 sm:translate-x-0 translate-x-1/2 bottom-[50%] sm:right-[20%]"
+          >
+              <video class="w-full" autoplay loop muted>
+              <source
+                  src="media/cat3.mp4"
+              />
+              </video>
+          </div>
+          <div
+              id="four"
+              class="all-content content-4 right-1/2 sm:translate-y-0 -translate-y-1/2 sm:translate-x-0 translate-x-1/2 top-[50%] sm:right-[20%]"
+          >
+              <video class="w-full" autoplay loop muted>
+              <source
+                  src="media/cat4.mp4"
+              />
+              </video>
+          </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="page3 bg-[#100F0F] h-screen w-full font-raleway">
+
+        <div class="horizontalScroll h-[100vh] overflow-hidden ">
+          <div class="wrapper w-[400vw] h-[100vh] bg-[#100f0f] flex absolute overflow-hidden">
+            <div class="slide w-[100vw] h-[100vh] bg-[#100f0f]  py-[80px] flex justify-center items-center  relative ">
+              <div class="text flex justify-center items-center">
+
+                <img class="w-[90%] max-w-[800px] h-fit" src="media/dw.png" alt="">
+
+              </div>
+
+              <div class="image absolute flex justify-center items-center">
+                <img class="w-[50%] max-w-[700px]" src="media/hs1.png" alt="">
+              </div>
+
+              <div class="up absolute w-[20vw] h-[20vw] bg-red-900 md:bg-red-950  blur-[40px] md:blur-[70px] rounded-full top-0 left-0 translate-x-[-74%] translate-y-[73%]"></div>
+
+              
+            </div>
+            <div class="slide w-[100vw] h-[100vh] bg-[#100f0f]  py-[80px] flex justify-center items-center relative ">
+
+              <div class="text flex justify-center items-center flex-col ">
+
+                <h1 class="text-[17vw] md:text-[160px] font-bold text-[#6e6161] tracking-wide leading-[16vw] md:leading-[150px] text-center ">CLASSIC </h1>
+                <h1 class="text-[17vw] md:text-[150px] font-bold text-[#c8baba] text-center leading-[16vw]  md:leading-[150px] " >WEARS</h1>
+
+              </div>
+
+              <div class="image absolute flex justify-center items-center">
+                <img class="w-[50%] max-w-[700px]" src="media/hs2.png" alt="">
+              </div>
+
+
+              <div class="up absolute w-[30vw] h-[30vw] bg-yellow-900 blur-[40px] md:blur-[70px] rounded-full bottom-0 left-0 translate-x-[-50%] translate-y-[80%]"></div>
+
+            </div>
+            <div class="slide w-[100vw] h-[100vh] bg-[#100f0f]  py-[80px] flex justify-center items-center relative ">
+              <div class="text flex justify-center items-center flex-col ">
+
+                <h1 class="text-[17vw] md:text-[160px] font-bold text-[#d2cbd2] tracking-wide leading-[16vw] md:leading-[150px]">SMART </h1>
+                <h1 class="text-[17vw] md:text-[160px] font-bold text-[#5c4b5c] tracking-wide leading-[16vw] md:leading-[150px]" >WEARS</h1>
+
+              </div>
+              <div class="image absolute flex justify-center items-center">
+                <img class="w-[50%] max-w-[700px]" src="media/hs3.png" alt="">
+              </div>
+
+              <div class="up absolute w-[30vw] h-[30vh]  md:w-[25vw] md:h-[25vh] bg-white blur-[60px]  md:blur-[100px] rounded-full top-0 left-[0] translate-x-[-50%] translate-y-[-50%] opacity-50"></div>
+
+              <div class="up absolute w-[25vw] h-[25vh] md:w-[20vw] md:h-[20vw] bg-[#817494] blur-[40px] md:blur-[100px] rounded-full bottom-0  right-[30%] md:right-[0] translate-x-[-90%] translate-y-[50%] opacity-50"></div>
+            </div>
+            <div class="slide w-[100vw] h-[100vh] bg-[#100f0f]  py-[80px] flex justify-center items-center relative ">
+
+              <div class="up absolute w-[30vw] h-[30vh] md:w-[16vw] md:h-[16vw] bg-white blur-[90px] rounded-full top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-40 "></div>
+
+              <div class="text flex justify-center items-center flex-col ">
+
+                <h1 class="text-[17vw] md:text-[160px] font-bold text-[#8d6648] tracking-wide leading-[16vw] md:leading-[150px]">MINIMAL</h1>
+                <h1 class="text-[17vw] md:text-[160px]  font-bold text-[#c3af9d] tracking-wide leading-[16vw] md:leading-[150px]" >QUARTZ</h1>
+
+              </div>
+
+              <div class="image absolute flex justify-center items-center">
+                <img class="w-[50%] max-w-[700px]" src="media/hs4.png" alt="">
+              </div>
+
+              
+              
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="page4 bg-[#100F0F] h-screen"></div>
+
+      <div class="page5 bg-[#100F0F] h-max w-[100vw] my-20 relative ">
+
+        <div class="shade absolute w-[15vw] h-[15vw] top-[20%] translate-y-[50%] translate-x-[-50%] z-[0] bg-orange-600   rounded-full blur-[8vw]"></div>
+        
+        <div class="shade absolute w-[15vw] h-[15vw] bottom-[0] right-0 translate-y-[50%] translate-x-[50%] z-[0] bg-orange-600   rounded-full blur-[8vw]"></div>
+
+
+        <div class="feature  h-max w-[100vw]  ">
+          <div class="featuredProduct font-redhat ">
+            <div
+            class="heading h-[200px] flex flex-col w-max m-auto justify-center my-6 "
+          >
+            <h1
+              class="textShadow text-white text-center scale-[2] custom:scale-[2.5] md:scale-[4] font-bold w-max  overflow-hidden gap-[1px] flex"
+            >
+              <div>F</div>
+              <div>E</div>
+              <div>A</div>
+              <div>T</div>
+              <div>U</div>
+              <div>R</div>
+              <div>E</div>
+              <div>S</div>
+              
+            </h1>
+          </div>
+    
+            <div class="featureSlide w-[90%] lg:w-[80%] m-auto">
+              <div
+                class="bg-[#131316] rounded-3xl flex-col md:flex-row flex overflow-hidden"
+              >
+                <div
+                  class="w-full border-b-2 md:border-0 border-[#5c5c5c] md:w-[45%] relative"
+                >
+                  <div
+                    class="w-[70px] md:w-[60px] lg:w-[90px] xl:w-[140px] absolute right-[8%] top-[8%] md:left-[10%]"
+                  >
+                    <img
+                      class="w-full"
+                      src="media/faslogo.png"
+                      alt=""
+                    />
+                  </div>
+    
+                  <div class="feature-img-div w-full h-full flex items-end justify-start md:justify-end md:pt-0 pt-8">
+                    <div class="feature-img-outer w-[60%] md:w-full relative flex justify-start">
+                      <img
+                        class="transform scale-x-[-1] w-full xl:w-[90%] 2xl:w-[80%] relative z-10 feature-img transition-all duration-500"
+                        src="media/ff1.png"
+                        alt=""
+                      />
+    
+                      <div
+                        class="feature-text absolute top-[20%] -right-[35%] sm:-right-[43%] md:-top-[9%] lg:-top-[18%] md:left-[10%]"
+                      >
+                        <h1
+                          class="font-oswald text-[#393D3B] text-8xl sm:text-9xl md:text-8xl lg:text-9xl tracking-tighter font-[800]"
+                        >
+                          2024
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div
+                    class="absolute left-[-30%] bottom-[30%] h-[200px] w-[200px] bg-[grey] rounded-full blur-[90px]"
+                  ></div>
+                </div>
+    
+                <div class="bg-[#131316] w-full md:w-[55%] px-8 py-8 lg:py-10">
+                  <div class="flex flex-col gap-5 lg:gap-6 xl:gap-7">
+                    <div class="flex tracking-wider">
+                      <p
+                        class="py-1 feature-p text-[#D9D9D9] text-[12px] lg:text-[15px] font-semibold relative cursor-pointer"
+                      >
+                        DIGI BLACK 2024
+                      </p>
+                    </div>
+                    <div
+                      class="text-6xl lg:text-7xl xl:text-8xl font-[760] !leading-[3rem] lg:!leading-[3.5rem] xl:!leading-[4.7rem] tracking-tighter flex flex-col text-[#D9D9D9]"
+                    >
+                      <h1>
+                        ANADIGI <br />
+                        BLACK
+                      </h1>
+                    </div>
+                    <div>
+                      <p class="text-[#D9D9D9] text-[11px] lg:text-[14px]">
+                        Fastrack AnaDigi Black Dial Plastic Strap Unisex Watch
+                      </p>
+                    </div>
+                    <div>
+                      <h2
+                        class="text-[#FF721D] text-3xl lg:text-4xl xl:text-5xl tracking-tighter font-[700]"
+                      >
+                        &#8377; 1755.00
+                      </h2>
+                    </div>
+                    <div class="swiper-container !w-full custom:!w-[100%] overflow-hidden">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff2.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff3.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff4.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff5.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff6.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff7.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="w-[80px] lg:w-[100px] h-[80px] lg:h-[100px] flex justify-center items-center bg-[#191818] border border-[#737373]"
+                          >
+                            <img
+                              class="w-[80%]"
+                              src="media/ff8.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+    
+    
+                      </div>
+                    </div>
+                    <div
+                      class="buttonContainer mt-5 flex flex-row  gap-4"
+                    >
+                      <div
+                        class="buyNow w-full hov-eff transition-all duration-700 custom:w-[45%] py-3 bg-gradient-to-r from-[#FF721D] to-[#972b07] rounded-full text-[13px] lg:text-[16px] xl:text-[18px] text-center font-bold text-white tracking-wide"
+                      >
+                        BUY NOW
+                      </div>
+                      <div
+                        class="addToCart w-full hov-eff transition-all duration-700 custom:w-[45%] py-3 bg-gradient-to-r from-[#FF721D] to-[#972b07] rounded-full text-[13px] lg:text-[16px] xl:text-[18px] text-center font-bold text-white tracking-wide"
+                      >
+                        + ADD TO CART
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        
+    
+      </div>
+
+
+      <div class="page6 bg-[#100F0F] h-[50vw] max-h-[500px] mt-24 w-full">
+        <div class="services h-[50vw] max-h-[500px] w-full  absolute font-redhat">
+  
+          <div class="line h-[50%] w-full border-b-[3px] border-dashed border-[#e4e4e4] flex " >
+            
+  
+            <div class="section w-1/4 relative  z-[2]">
+              <div class="shadow w-[7vw] h-[7vw] md:w-[5vw] md:h-[5vw] bg-[orange] top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute rounded-full blur-[4vw]"></div>
+  
+              <div class="chekout w-[12vw] h-[12vw] md:w-[9vw] md:h-[9vw] border-2 md:border-[3px] rounded-full bg-gradient-to-r from-orange-500 to-orange-950 absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center hover:scale-105 transition duration-300">
+  
+                <img class="w-[90%] h-[80%] " src="/media/security.png" alt="">
+  
+                <div class="serviceText text-[#e4e4e4] font-[500] text-[2vw] md:text-[1.5vw] text-center  absolute bottom-[-50%] translate-y-[50%] left-[50%] translate-x-[-50%] w-max">SAFE AND SECURE <br> CHECKOUT</div>
+  
+              </div>
+  
+              
+  
+              
+            </div>
+            
+            <div class="section  w-1/4 relative  z-[2]">
+  
+              <div class="shadow w-[7vw] h-[7vw] md:w-[5vw] md:h-[5vw] bg-[orange] top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute rounded-full blur-[4vw]"></div>
+  
+              <div class="quality w-[12vw] h-[12vw]  md:w-[9vw] md:h-[9vw]  border-2 md:border-[3px] rounded-full bg-gradient-to-r from-orange-500 to-orange-950 absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center  hover:scale-105 transition duration-300">
+  
+                <img class="w-[72%] h-[72%] " src="/media/quality.png" alt="">
+  
+                <div class="serviceText text-[#e4e4e4] font-[500] text-[2vw] md:text-[1.5vw] text-center  absolute top-[-50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-max">PREMIUM QUALITY <br> PRODUCT</div>
+  
+              </div>
+            </div>
+            
+            <div class="section  w-1/4 relative z-[2]">
+  
+              <div class="shadow w-[7vw] h-[7vw] md:w-[5vw] md:h-[5vw] bg-[orange] top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute rounded-full blur-[4vw]"></div>
+  
+              <div class="return w-[12vw] h-[12vw] md:w-[9vw] md:h-[9vw] border-2 md:border-[3px] rounded-full bg-gradient-to-r from-orange-500 to-orange-950 absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center  hover:scale-105 transition duration-300">
+  
+                <img class="w-[72%] h-[72%] " src="/media/return-box.png" alt="">
+  
+                <div class="serviceText text-[#e4e4e4] font-[500] text-[2vw] md:text-[1.5vw] text-center  absolute bottom-[-50%] translate-y-[50%] left-[50%] translate-x-[-50%] w-max">7 DAY RETURN</div>
+  
+              </div>
+            </div>
+            <div class="section  w-1/4 relative z-[2]">
+  
+              <div class="shadow w-[7vw] h-[7vw] md:w-[5vw] md:h-[5vw] bg-[orange] top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute rounded-full blur-[4vw]"></div>
+  
+              <div class="return w-[12vw] h-[12vw] md:w-[9vw] md:h-[9vw] border-2 md:border-[3px] rounded-full bg-gradient-to-r from-orange-500 to-orange-950 absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center  hover:scale-105 transition duration-300">
+  
+                <img class="w-[72%] h-[72%] " src="/media/fast-delivery.png" alt="">
+  
+                <div class="serviceText text-[#e4e4e4] font-[500] text-[2vw] md:text-[1.5vw] text-center absolute top-[-50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-max ">FREE SHIPPING <br> NATIONWIDE</div>
+  
+              </div>
+            </div>
+            
+
+   
+          </div>
+  
+        </div>
+
+      </div>
+
+      <div class="page7 bg-[#100F0F] h-max  w-full mb-10 relative " >
+
+        <div class="shade absolute w-[13vw] h-[13vw] top-0 translate-y-[50%] translate-x-[-50%] z-[0] bg-orange-600   rounded-full blur-[8vw]"></div>
+
+
+        <div class="trendings font-redhat bg-[#100F0F]  w-full min-h-[80vh]">
+          <div
+            class="heading h-[200px] flex flex-col w-max m-auto justify-center my-6 "
+          >
+            <h1
+              class="textShadow text-white text-center scale-[2] custom:scale-[2.5] md:scale-[4] font-bold w-max  overflow-hidden gap-[1px] flex"
+            >
+              <div>T</div>
+              <div>R</div>
+              <div>E</div>
+              <div>N</div>
+              <div>D</div>
+              <div>I</div>
+              <div>N</div>
+              <div>G</div>
+              <div>S</div>
+              
+            </h1>
+          </div>
+          
+          <div class="slideContainer trending-slideContainer p-5 w-[95%] m-auto overflow-x-scroll">
+            <div
+              class="slidewrapper trending-wrapper flex w-[100%] h-[250px] min-w-[1700px] relative"
+            ></div>
+          </div>
+
+          <div class="slideContainer2 trending-slideContainer2 p-5 w-[95%] m-auto overflow-x-scroll">
+            <div
+              class="slidewrapper2 trending-wrapper2 flex w-[100%] h-[250px] min-w-[1700px] relative"
+            ></div>
+          </div>
+  
+
+          <div class="viewMore bg-[#100F0F] mt-16 h-[30vh] w-full justify-center flex relative items-center ">
+
+
+            <div class="circle h-[100px] w-[100px] absolute rounded-full  bg-gradient-to-r from-orange-500 to-orange-950 left-[50%]"></div>
+            
+            <h1 class=" font-bold text-3xl text-[white] absolute ">View More  &nbsp; >>  
+            </h1>
+  
+            
+  
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page8 h-max w-full bg-[#100F0F] ">
+
+
+        <div class="shopYourVibe  bg-[#100F0F] " >
+          
+  
+          <div class="sliderContainer ">
+            <div class="slider w-[100%] h-max relative ">
+              <img class="scroll-aspect w-[100%] opacity-0 overflow-hidden" src="" alt="">
+              <div class="slide1 absolute z-[3] h-[100%] w-[100%] flex top-0 ">
+  
+                <div class="image h-[100%] w-[20%] "></div>
+  
+                <div class="image h-[100%] w-[20%] "></div>
+  
+                <div class="image h-[100%] w-[20%] "></div>
+  
+                <div class="image h-[100%] w-[20%] "></div>
+  
+                <div class="image h-[100%] w-[20%] "></div>
+                
+              </div>
+              <div class="slide2 absolute z-[2] h-[100%] w-[100%] flex top-0 ">
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner3.jpeg')] bg-[length:500%_100%] "></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner3.jpeg')] bg-[length:500%_100%] bg-[25%] "></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner3.jpeg')] bg-[length:500%_100%] bg-[50%] "></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner3.jpeg')] bg-[length:500%_100%] bg-[75%]"></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner3.jpeg')] bg-[length:500%_100%] bg-[100%]"></div>
+                
+              </div>
+              <div class="slide3 absolute z-[1] h-[100%] w-[100%] flex top-0 ">
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner2.jpeg')] bg-[length:500%_100%] "></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner2.jpeg')] bg-[length:500%_100%] bg-[25%] "></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner2.jpeg')] bg-[length:500%_100%] bg-[50%] "></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner2.jpeg')] bg-[length:500%_100%] bg-[75%]"></div>
+  
+                <div class="image h-[100%] w-[20%] bg-[url('media/banner2.jpeg')] bg-[length:500%_100%] bg-[100%]"></div>
+                
+              </div>
+              
+            </div>
+  
+            
+  
+          </div>
+  
+          
+  
+  
+        </div>
+      </div>
+
+      <div class="page9 h-max w-full bg-[#100f0f]">
+        <div class="bestSeller bg-[#100F0F] font-redhat">
+          <div
+            class="heading h-[200px] flex flex-col w-max m-auto justify-center my-10"
+          >
+            <h1
+              class="textShadow text-white text-center scale-[2] custom:scale-[2.5] md:scale-[4] font-bold w-max  overflow-hidden gap-[1px] flex"
+            >
+              <div>B</div>
+              <div>E</div>
+              <div>S</div>
+              <div>T</div>
+              <div>&nbsp;</div>
+              <div>S</div>
+              <div>E</div>
+              <div>L</div>
+              <div>L</div>
+              <div>E</div>
+              <div>R</div>
+              <div>S</div>
+            </h1>
+          </div>
+  
+          <div class="slideContainer w-[95%] m-auto">
+            <div
+              class="slidewrapper bs-wrapper grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full relative gap-3 sm:gap-6 overflow-hidden"
+            ></div>
+          </div>
+        </div>
+
+        <div class="viewMore bg-[#100F0F]  h-[50vh] w-full justify-center flex relative items-center ">
+
+
+          <div class="circle h-[100px] w-[100px] absolute rounded-full bg-gradient-to-r from-orange-500 to-orange-950 left-[50%]"></div>
+          
+          <h1 class=" font-bold text-3xl text-[white] absolute ">View More  &nbsp; &nbsp;>>  
+          </h1>
+
+          
+
+        </div>
+
+      </div>
+
+      <div class="page10 bg-[#100F0F] h-[100vh] w-[100vw] relative">
+        <canvas class="max-w-[100vw] max-h-[100vh] relative  bg-black"></canvas>
+
+        <div class="whyUs absolute  h-[100vh] w-full top-0 flex justify-center items-center uppercase ">
+          <h1 class="text-2xl text-[white] sm:text-3xl md:text-4xl lg:text-[6vw] lg:leading-[6.5vw]">Why Choose Us ?</h1>
+        </div>
+      </div>
+      <div class="page11  h-[100vh] w-[100vw] flex justify-evenly items-center text-white relative ">
+
+        <div class="absolute h-[50vh] w-full">
+          <div class="text-h w-[100%] lg:w-[60%] p-[32px] flex flex-col gap-3 backdrop-blur-[10px] bottom-0 lg:left-0 absolute lg:translate-y-[50%] lg:bottom-[50%] border-[0.5px] border-[#ffffff46] rounded-lg bg-[#dfae9e26]">
+            <h1 class="text-3xl lg:text-[5.5vw] text-[white] font-bold lg:leading-[6vw] textShadow ">BUILT <span class="text-[orangered] ">TO</span> LAST</h1>
+  
+            <p class="text-[white] text-sm lg:text-[1.5vw] lg:leading-[2vw] ">Crafted from high-quality materials like stainless steel and toughened
+              resins, Fastrack sports watches can withstand bumps, scrapes, and even
+              the occasional splash.</p>
+          </div>
+  
+          <div class="imageWhy w-[100%] max-w-[400px] lg:w-[50%] flex item-center justify-center absolute top-0 lg:right-0 lg:top-[50%] lg:translate-y-[-50%]">
+            <img class="w-[50%] md:w-[70%] max-w[300px] lg:w-[100%]" src="media/whywatch.png" alt="">
+  
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="page12  h-[100vh] w-[100vw] flex justify-evenly items-center text-white  relative">
+
+        <div class="absolute h-[50vh] w-full">
+
+          <div class="text-h w-[100%] lg:w-[60%] p-[32px] flex flex-col gap-3 backdrop-blur-[10px] bottom-0 lg:right-0 absolute lg:translate-y-[50%] lg:bottom-[50%] border-[0.5px] border-[#ffffff46] rounded-lg bg-[#dfae9e26]">
+            <h1 class="text-3xl lg:text-[5.5vw] text-[white] font-bold lg:leading-[6vw] textShadow ">AFFORDABLE <br><span class="text-[orangered] ">PRICES</span></h1>
+  
+            <p class="text-[white] text-sm lg:text-[1.5vw] lg:leading-[2vw]">You don't have to break the bank to get a great sports watch. Fastrack offers a range of options at prices that fit your budget.</p>
+          </div>
+  
+          <div class="image w-[100%] max-w-[400px] lg:w-[50%] flex item-center justify-center absolute top-0 lg:left-0 lg:top-[50%] lg:translate-y-[-50%]">
+            <img class="w-[50%] md:w-[70%] max-w[300px] lg:w-[100%] opacity-0" src="media/whywatch.png" alt="">
+  
+          </div>
+
+        </div>
+        
+
+        
+      </div>
+      <div class="page13 h-[100vh] w-[100vw] flex justify-evenly items-center text-white  relative">
+
+        <div class="absolute h-[50vh] w-full">
+          <div class="text-h w-[100%] lg:w-[60%] p-[32px] flex flex-col gap-3  backdrop-blur-[10px] bottom-0 lg:left-0 absolute lg:translate-y-[50%] lg:bottom-[50%] border-[0.5px] border-[#ffffff46] rounded-lg bg-[#dfae9e26]">
+            <h1 class="text-3xl lg:text-[5.5vw] text-[white] font-bold lg:leading-[6vw] textShadow ">WATER  <span class="text-[orangered] ">RESISTANT</span></h1>
+  
+            <p class="text-[white] text-sm lg:text-[1.5vw] lg:leading-[2vw] ">Whether you're hitting the gym, running in the rain, or going for a swim, a Fastrack sports watch can keep you up. 
+            
+            With varying ATM ratings, you can choose a waterproof sports watch that matches your specific activity level.</p>
+          </div>
+  
+          <div class="image w-[100%] max-w-[400px] lg:w-[50%] flex item-center justify-center absolute top-0 lg:right-0 lg:top-[50%] lg:translate-y-[-50%]">
+            <img class="w-[50%] md:w-[70%] max-w[300px] lg:w-[100%] opacity-0" src="media/whywatch.png" alt="">
+  
+          </div>
+
+        </div>
+
+        
+      </div>
+
+      <div class="page14 h-max w-[100vw] relative overflow-hidden">
+
+        <div class="shade absolute w-[13vw] h-[13vw] top-0 translate-x-[-50%] translate-y-[-50%] z-10 bg-orange-600   rounded-full blur-[10vw]"></div>
+
+        <div class="full-footer ">
+          <div class="my-20 bg-[#100f0f] social ">
+            <div class="heading flex flex-col w-max m-auto justify-center my-7">
+              <h1
+                class="textShadow text-white text-center scale-[1.8] custom:scale-[2.2] sm:scale-[3] font-bold w-max relative"
+              >
+                WE ARE ON SOCIAL
+                <img
+                  class="w-[20%] absolute top-[-10%]"
+                  src="media/faslogo.png"
+                  alt=""
+                />
+              </h1>
+            </div>
+
+            <div class="flex justify-center gap-3 custom:gap-5 mt-16">
+              <img
+                class="w-[35px] custom:w-[50px] hover:scale-[1.3] transition duration-500"
+                src="social/insta.svg"
+                alt=""
+              />
+              <img
+                class="w-[35px] custom:w-[40px] hover:scale-[1.3] transition duration-500"
+                src="social/fb.svg"
+                alt=""
+              />
+              <img
+                class="w-[35px] custom:w-[40px] hover:scale-[1.3] transition duration-500"
+                src="social/x.svg"
+                alt=""
+              />
+              <img
+                class="w-[35px] custom:w-[50px] hover:scale-[1.3] transition duration-500"
+                src="social/yt.svg"
+                alt=""
+              />
+              <img
+                class="w-[35px] custom:w-[50px] hover:scale-[1.3] transition duration-500"
+                src="social/pin.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="footer font-redhat overflow-hidden bg-[#191818]">
+            <div
+              class="flex justify-between flex-col gap-10 md:gap-0 md:flex-row pt-9 sm:pt-14 px-5 sm:px-8"
+            >
+              <div class="w-[180px] sm:w-[230px]">
+                <img
+                  src="media/faslogo.png"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-3 rounded-full w-full sm:w-[90%] md:w-[60%] xl:w-[50%] relative"
+              >
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="px-5 text-[15px] w-full font-semibold py-3 text-black border-2 border-[#c1672f] bg-[#D9D9D9] rounded-full outline-none flex-grow"
+                />
+                <button
+                  class="bg-gradient-to-r sm:absolute sm:right-0 from-[#FF721D] h-full to-[#972b07] font-semibold text-white py-3 px-8 lg:px-10 rounded-full lg:text-[14px] text-xs"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 md:mt-20 gap-20 md:gap-18 py-10 px-8 text-white"
+            >
+              <div>
+                <h2 class="font-semibold text-xl hover:text-[#c1672f] transition-all duration-500">OUR SERVICES</h2>
+                <ul class="text-xs space-y-1 mt-7">
+                  <li class="footer-link">Payment Options</li>
+                  <li  class="footer-link">Track Order</li>
+                  <li class="footer-link">Find a Store</li>
+                  <li class="footer-link">Encircle Program</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="font-semibold text-xl hover:text-[#c1672f] transition-all duration-500">OUR POLICIES</h2>
+                <ul class="text-xs space-y-1 mt-7">
+                  <li class="footer-link">Brand Protection</li>
+                  <li class="footer-link">Cancellation</li>
+                  <li class="footer-link">Shipping Warranty</li>
+                  <li class="footer-link">Policies</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="font-semibold text-xl hover:text-[#c1672f] transition-all duration-500">ABOUT US</h2>
+                <ul class="text-xs space-y-1 mt-7">
+                  <li class="footer-link">About Us</li>
+                  <li class="footer-link">Help & Contact</li>
+                  <li class="footer-link">Careers</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="font-semibold text-xl hover:text-[#c1672f] transition-all duration-500">CONTACT US</h2>
+                <ul class="space-y-1 text-xs mt-7">
+                  <li class="footer-link">Phone: 1800-266-0123</li>
+                  <li class="footer-link">Email: customercare@titan.co.in</li>
+                  <li class="footer-link">FAQs</li>
+                </ul>
+              </div>
+
+              <div class="lg:mt-7 sm:col-span-2">
+                <h2 class="font-semibold text-xl hover:text-[#c1672f] transition-all duration-500">DOWNLOAD OUR APP</h2>
+
+                <div class="flex gap-2 mt-7">
+                  <img
+                    class="cursor-pointer"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw42175e01/images/footer/appstoreM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="cursor-pointer"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw8bd19073/images/footer/googleplayFM.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="flex justify-center sm:col-span-2">
+                <div class="flex gap-6 flex-wrap w-full">
+                  <img
+                    class="w-[50px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw6c411e8e/images/footer/visaFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[40px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dwafe7e638/images/footer/mastercardiconFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[60px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw32ce3fc2/images/footer/paypalFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[40px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dwbf6c3563/images/footer/maestro.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[50px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw737e363a/images/footer/rupayFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[80px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dwacdbb9b8/images/footer/axisbankFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[80px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dwb4844a5a/images/footer/icicibankFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[70px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw6132f9de/images/footer/dinnerclubFM.svg"
+                    alt=""
+                  />
+                  <img
+                    class="w-[20px]"
+                    src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw64f51fff/images/footer/AmericanexpressFm.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          // ...existing code...
+          <div class="last w-full">
+            <div
+              class="bg-gradient-to-r from-orange-500 to-orange-700 py-5 w-full"
+            >
+             
+              <p class="text-center text-white text-xs font-semibold mt-2">
+                Designed &amp; Developed by
+                <a href="https://github.com/Rajvansh-1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:underline ml-1">
+                  <i class="fa-brands fa-github"></i>&nbsp;@Rajvansh-1
+                </a>
+              </p>
+            </div>
+          </div>
+// ...existing code...
+        </div>
+
+        
+
+        
+      </div> 
+      
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="module" src="/main.js"></script>
+</html>
